@@ -1,0 +1,143 @@
+{
+  "run_id": "motion-v2-exe-20261115",
+  "browser": "157.0.8103.51",
+  "checks": [
+    {
+      "name": "new Control Room resources served",
+      "status": "passed"
+    },
+    {
+      "name": "text live status retained",
+      "status": "passed"
+    },
+    {
+      "name": "structural desktop navigation rail",
+      "status": "passed"
+    },
+    {
+      "name": "scenario selection prepares composer without submitting",
+      "status": "passed"
+    },
+    {
+      "name": "response motion belongs to real returned message",
+      "status": "passed"
+    },
+    {
+      "name": "evidence collapse, expand, Escape and restored focus",
+      "status": "passed"
+    },
+    {
+      "name": "confirmation visually distinct without automatic side effect",
+      "status": "passed"
+    },
+    {
+      "name": "human click produces one confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "queue focus and real persisted record",
+      "status": "passed"
+    },
+    {
+      "name": "rapid section transitions preserve focus, unique IDs and no chat action",
+      "status": "passed"
+    },
+    {
+      "name": "metric loading marker clears when real response arrives",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 1440x900: no overflow, real order and accessible proof",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 1280x800: no overflow, real order and accessible proof",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 390x844: no overflow, real order and accessible proof",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 375x812: no overflow, real order and accessible proof",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 320x700: no overflow, real order and accessible proof",
+      "status": "passed"
+    },
+    {
+      "name": "200% CSS zoom reflows without clipping content",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion disables transitions including navigation pseudo-element",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard section activation routes focus",
+      "status": "passed"
+    },
+    {
+      "name": "seven principal text color pairs meet 4.5:1",
+      "status": "passed"
+    },
+    {
+      "name": "observed non-input layout shift below 0.1",
+      "status": "passed"
+    },
+    {
+      "name": "HTML CSS JS below 150 KB uncompressed",
+      "status": "passed"
+    },
+    {
+      "name": "no external UI requests or page errors",
+      "status": "passed"
+    }
+  ],
+  "contrast": [
+    {
+      "fg": "101417",
+      "bg": "f5f4ef",
+      "ratio": 16.808929503360062
+    },
+    {
+      "fg": "59615f",
+      "bg": "f5f4ef",
+      "ratio": 5.77872530023669
+    },
+    {
+      "fg": "28150f",
+      "bg": "ff694a",
+      "ratio": 6.12054988382859
+    },
+    {
+      "fg": "ecf0ec",
+      "bg": "293231",
+      "ratio": 11.437787279048166
+    },
+    {
+      "fg": "f4f6ee",
+      "bg": "253b34",
+      "ratio": 10.983661683681241
+    },
+    {
+      "fg": "8d2c17",
+      "bg": "fff0e9",
+      "ratio": 7.541415787278847
+    },
+    {
+      "fg": "7b2a17",
+      "bg": "ffe3d8",
+      "ratio": 7.883434294808584
+    }
+  ],
+  "cls": 0,
+  "html_css_js_bytes": 44257,
+  "external_requests": 0,
+  "limitations": [
+    "CSS zoom, not browser native zoom",
+    "No screen-reader or full WCAG certification",
+    "Motion tested via rendered styles/DOM; no video fabricated"
+  ]
+}

@@ -1,0 +1,5 @@
+[
+  {"customer_id":"CUST-001","alias":"Cliente A","demo_token":"DEMO-CUST-001","show_order_ids":["ORD-1001","ORD-1002","ORD-1003","ORD-1009"]},
+  {"customer_id":"CUST-002","alias":"Cliente B","demo_token":"DEMO-CUST-002","show_order_ids":["ORD-1004","ORD-1005","ORD-1010"]},
+  {"customer_id":"CUST-003","alias":"Cliente C","demo_token":"DEMO-CUST-003","show_order_ids":["ORD-1006","ORD-1007","ORD-1008"]}
+]

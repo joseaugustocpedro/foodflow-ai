@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "version": "demo-2.0",
+    "type": "fictional",
+    "affiliated_with_ifood": false
+  },
+  "topics": {
+    "late_delivery": "Atraso exige status on_the_way, ETA válida e ETA menor que 2026-11-11T19:00:00-03:00 (relógio simulado). Oferecer ticket; não prometer compensação nem novo prazo.",
+    "cancel": "Não cancelar diretamente. Criar ticket de solicitação de cancelamento para revisão na simulação.",
+    "wrong_item": "Registrar ticket para análise de item incorreto ou faltante. Não garantir reembolso.",
+    "refund": "O agente não autoriza reembolsos. Um pedido de análise pode ser registrado por ticket fictício.",
+    "privacy": "Somente consultar pedidos associados ao cliente autenticado no contexto do backend."
+  }
+}

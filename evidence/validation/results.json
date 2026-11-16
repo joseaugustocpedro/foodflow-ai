@@ -1,0 +1,63 @@
+{
+  "run_id": "motion-v2-final-20261115",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "packages": {
+      "fastapi": "0.162.5",
+      "starlette": "1.10.0",
+      "pydantic": "2.14.3",
+      "httpx": "0.28.1",
+      "pytest": "9.2.0"
+    },
+    "browser": "157.0.8103.51",
+    "playwright": "1.62.1",
+    "pyinstaller": "6.22.3"
+  },
+  "pytest": {
+    "passed": 118,
+    "skipped": 2,
+    "failed": 0,
+    "seconds": 16.45,
+    "warnings": 1,
+    "skip_reasons": [
+      "live LLM gate not enabled",
+      "live n8n gate not enabled"
+    ],
+    "warning": "Starlette TestClient/httpx deprecation"
+  },
+  "evaluations": {
+    "demo": 35,
+    "fake": 35,
+    "pilot_demo": 8,
+    "pilot_fake": 8,
+    "online_skipped": 43,
+    "failed": 0
+  },
+  "http_passed": 6,
+  "browser": {
+    "original": 17,
+    "control_room": 23,
+    "motion": 9,
+    "failed": 0,
+    "console_errors": 0
+  },
+  "ruff": "PASSED",
+  "windows_exe": "PASSED",
+  "llm_online": "NOT_EXECUTED",
+  "n8n_live_current_round": "NOT_EXECUTED",
+  "n8n_stage06": "N01-N08 historical evidence preserved",
+  "ci_remote": "NOT_EXECUTED",
+  "deploy": "NOT_EXECUTED",
+  "video": {
+    "media_seconds": 29.32,
+    "format": "WebM/VP8",
+    "real_exe": true
+  },
+  "limitations": [
+    "No clean Windows without Python test",
+    "No screen reader or full WCAG audit",
+    "CSS zoom only",
+    "No MP4/GIF encoder available; no installation"
+  ]
+}

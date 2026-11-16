@@ -1,0 +1,35 @@
+{
+  "run_id": "motion-v2-exe-20261115",
+  "checks": [
+    {
+      "name": "ORD-1001",
+      "status": 200,
+      "request_id": "4303df04-d1c3-4b03-8d2d-8ae69d0c40f1"
+    },
+    {
+      "name": "ORD-1009",
+      "status": 200,
+      "request_id": "f66a9d83-5688-4148-9a26-594a9406c811"
+    },
+    {
+      "name": "ORD-1004",
+      "status": 403,
+      "request_id": "8d528991-072e-490e-93f3-625aba4b4b8a"
+    },
+    {
+      "name": "confirmed_ticket_and_repeat",
+      "ticket_id": "TCK-9274F8AE6BB34D1B",
+      "event_id": "9b8279c7-094b-4f6e-a8fb-908b815794d1",
+      "state": "not_configured"
+    },
+    {
+      "name": "metrics",
+      "requests": 4,
+      "sample": 4
+    },
+    {
+      "name": "actual_chunked_bytes_limit",
+      "status": 413
+    }
+  ]
+}

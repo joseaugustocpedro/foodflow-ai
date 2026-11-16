@@ -1,0 +1,77 @@
+{
+  "run_id": "motion-v2-exe-20261115",
+  "browser": "157.0.8103.51",
+  "checks": [
+    {
+      "name": "LLM default demo and blocked without authorization",
+      "status": "passed"
+    },
+    {
+      "name": "scenario does not send",
+      "status": "passed"
+    },
+    {
+      "name": "F1 keyboard Enter and source with ISO detail",
+      "status": "passed"
+    },
+    {
+      "name": "portfolio label and readable dates preserve original ISO in technical details",
+      "status": "passed"
+    },
+    {
+      "name": "F2 keyboard confirmed ticket",
+      "status": "passed"
+    },
+    {
+      "name": "focus restored to Atendimento heading",
+      "status": "passed"
+    },
+    {
+      "name": "F3 denied without private fields",
+      "status": "passed"
+    },
+    {
+      "name": "XSS inert text",
+      "status": "passed"
+    },
+    {
+      "name": "late response discarded after customer switch",
+      "status": "passed"
+    },
+    {
+      "name": "old metrics response discarded after filter change",
+      "status": "passed"
+    },
+    {
+      "name": "all stale cards labeled on failure",
+      "status": "passed"
+    },
+    {
+      "name": "no page overflow at 375px",
+      "status": "passed"
+    },
+    {
+      "name": "no page overflow at 320px",
+      "status": "passed"
+    },
+    {
+      "name": "mobile scenarios collapsed on initial load",
+      "status": "passed"
+    },
+    {
+      "name": "simulated capability selection per send; real offline backend still refuses online",
+      "status": "passed"
+    },
+    {
+      "name": "200% CSS zoom overflow check",
+      "status": "passed"
+    },
+    {
+      "name": "no browser page errors",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "CSS zoom exercised; browser native zoom and screen reader not manually verified."
+  ]
+}

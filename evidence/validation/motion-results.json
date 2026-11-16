@@ -1,0 +1,46 @@
+{
+  "run_id": "motion-v2-1794784997594",
+  "browser": "157.0.8103.51",
+  "checks": [
+    {
+      "name": "sidebar transform moves through intermediate position; focus preserved",
+      "status": "passed"
+    },
+    {
+      "name": "scenario slider moves without posting or claiming consultation",
+      "status": "passed"
+    },
+    {
+      "name": "confirmation animation waits for real server response delivery",
+      "status": "passed"
+    },
+    {
+      "name": "confirmed rail identifies server-persisted ticket",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard navigation remains functional during motion",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion disables CSS and WAAPI effects",
+      "status": "passed"
+    },
+    {
+      "name": "mobile entrance has no horizontal overflow across animation frames",
+      "status": "passed"
+    },
+    {
+      "name": "all six local visual resources below 150 KB",
+      "status": "passed"
+    },
+    {
+      "name": "no external requests, console errors or page errors",
+      "status": "passed"
+    }
+  ],
+  "bytes": 65107,
+  "maxOverflow": 0,
+  "external_requests": 0,
+  "confirmation_response": "Real backend, delivery held by test only"
+}

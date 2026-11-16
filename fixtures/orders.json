@@ -1,0 +1,12 @@
+[
+  {"id":"ORD-1001","customer_id":"CUST-001","status":"preparing","merchant":"Bistrô Horizonte","items":["Sanduíche de frango", "Suco"],"updated_at":"2026-11-11T18:42:00-03:00","eta":"2026-11-11T19:30:00-03:00","is_delayed":false,"notes":"Pedido em preparo; ETA fictício e sujeito a atualização"},
+  {"id":"ORD-1002","customer_id":"CUST-001","status":"on_the_way","merchant":"Casa da Massa","items":["Penne ao sugo"],"updated_at":"2026-11-11T18:30:00-03:00","eta":"2026-11-11T18:50:00-03:00","is_delayed":true,"notes":"Atraso sinalizado pelo simulador às 19:00"},
+  {"id":"ORD-1003","customer_id":"CUST-001","status":"delivered","merchant":"Verde & Grão","items":["Salada", "Água"],"updated_at":"2026-11-11T17:10:00-03:00","eta":"2026-11-11T17:15:00-03:00","is_delayed":false,"notes":"Pedido entregue na simulação"},
+  {"id":"ORD-1004","customer_id":"CUST-002","status":"preparing","merchant":"Pizzaria 42","items":["Pizza marguerita"],"updated_at":"2026-11-11T18:47:00-03:00","eta":"2026-11-11T19:40:00-03:00","is_delayed":false,"notes":"Pedido pertence a outro cliente demo"},
+  {"id":"ORD-1005","customer_id":"CUST-002","status":"on_the_way","merchant":"Nori Bento","items":["Bento vegetal"],"updated_at":"2026-11-11T18:10:00-03:00","eta":"2026-11-11T18:35:00-03:00","is_delayed":true,"notes":"Atraso demonstrativo"},
+  {"id":"ORD-1006","customer_id":"CUST-003","status":"canceled","merchant":"Cozinha Aurora","items":["Risoto"],"updated_at":"2026-11-11T16:00:00-03:00","eta":null,"is_delayed":false,"notes":"Cancelamento já registrado; sem reembolso automático"},
+  {"id":"ORD-1007","customer_id":"CUST-003","status":"delivered","merchant":"Boteco da Praça","items":["Prato feito"],"updated_at":"2026-11-11T18:13:00-03:00","eta":"2026-11-11T18:20:00-03:00","is_delayed":false,"notes":"Pode simular relato de item errado"},
+  {"id":"ORD-1008","customer_id":"CUST-003","status":"received","merchant":"Sabor Nativo","items":["Açaí"],"updated_at":"2026-11-11T18:59:00-03:00","eta":null,"is_delayed":false,"notes":"Sem horário estimado confirmado"},
+  {"id":"ORD-1009","customer_id":"CUST-001","status":"on_the_way","merchant":"Ponto Veg","items":["Hambúrguer vegetal"],"updated_at":"2026-11-11T18:54:00-03:00","eta":null,"is_delayed":false,"notes":"Não há ETA registrado; nunca inventar prazo"},
+  {"id":"ORD-1010","customer_id":"CUST-002","status":"preparing","merchant":"Padaria Central","items":["Café e pão"],"updated_at":"2026-11-11T18:50:00-03:00","eta":"2026-11-11T19:10:00-03:00","is_delayed":false,"notes":"Normal"}
+]
