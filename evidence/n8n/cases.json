@@ -1,0 +1,2671 @@
+{
+  "run_id": "stage06-20261114T132347Z-e8fe98",
+  "cases": [
+    {
+      "case_id": "N01",
+      "status": "PASSED",
+      "event_id": "bec8967a-f9db-4056-910f-179027399b27",
+      "ticket_id": "TCK-81485EEABF9B4850",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-3c3d4e5ed9a4",
+          "captured_at": "2026-11-14T13:24:41.853653+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "bec8967a-f9db-4056-910f-179027399b27",
+          "ticket_id": "TCK-81485EEABF9B4850",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": "bec8967a-f9db-4056-910f-179027399b27",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-66e2f3f712e2",
+          "captured_at": "2026-11-14T13:24:43.456528+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "bec8967a-f9db-4056-910f-179027399b27",
+          "ticket_id": "TCK-81485EEABF9B4850",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "bec8967a-f9db-4056-910f-179027399b27",
+            "ticket_id": "TCK-81485EEABF9B4850",
+            "record_id": "80b5c82f-a7fd-41ff-8fef-a7be724adbf0",
+            "received_at": "2026-11-14T13:24:43.324682+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": "bec8967a-f9db-4056-910f-179027399b27",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:43.058092+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": "bec8967a-f9db-4056-910f-179027399b27",
+              "attempt_id": "61c24ffc-9324-4747-9634-2448a20257a5"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:24:43.381158+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": "bec8967a-f9db-4056-910f-179027399b27",
+              "attempt_id": "61c24ffc-9324-4747-9634-2448a20257a5"
+            }
+          ],
+          "label": "attempt-1"
+        },
+        {
+          "run_id": "n8n-snapshot-5d4fb7b034f7",
+          "captured_at": "2026-11-14T13:24:43.459526+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "bec8967a-f9db-4056-910f-179027399b27",
+          "ticket_id": "TCK-81485EEABF9B4850",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "bec8967a-f9db-4056-910f-179027399b27",
+            "ticket_id": "TCK-81485EEABF9B4850",
+            "record_id": "80b5c82f-a7fd-41ff-8fef-a7be724adbf0",
+            "received_at": "2026-11-14T13:24:43.324682+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": "bec8967a-f9db-4056-910f-179027399b27",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:41.831028+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:43.058092+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": "bec8967a-f9db-4056-910f-179027399b27",
+              "attempt_id": "61c24ffc-9324-4747-9634-2448a20257a5"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:24:43.381158+00:00",
+              "request_id": "db2082f0-b4d6-49c0-b29f-1174ca4e2c9a",
+              "operation_id": "bec8967a-f9db-4056-910f-179027399b27",
+              "attempt_id": "61c24ffc-9324-4747-9634-2448a20257a5"
+            }
+          ],
+          "label": "confirmed"
+        }
+      ],
+      "runtime_executions": [
+        {
+          "captured_at": "2026-11-14T13:24:43.382Z",
+          "execution_id": "1",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "bec8967a-f9db-4056-910f-179027399b27",
+          "ticket_id": "TCK-81485EEABF9B4850",
+          "record_id": "80b5c82f-a7fd-41ff-8fef-a7be724adbf0",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        }
+      ],
+      "details": {}
+    },
+    {
+      "case_id": "N02",
+      "status": "PASSED",
+      "event_id": "16de8d70-d49a-47f9-b08c-8f1ef1a47a0c",
+      "ticket_id": "TCK-92A26B88ED224BAE",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-c6714e7c4efa",
+          "captured_at": "2026-11-14T13:24:45.136805+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "16de8d70-d49a-47f9-b08c-8f1ef1a47a0c",
+          "ticket_id": "TCK-92A26B88ED224BAE",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:45.127421+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:45.127421+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": "16de8d70-d49a-47f9-b08c-8f1ef1a47a0c",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:45.127421+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-83d42c230635",
+          "captured_at": "2026-11-14T13:24:46.240810+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "16de8d70-d49a-47f9-b08c-8f1ef1a47a0c",
+          "ticket_id": "TCK-92A26B88ED224BAE",
+          "outbox": {
+            "state": "pending",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:45.127421+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:45.127421+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": "16de8d70-d49a-47f9-b08c-8f1ef1a47a0c",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:45.127421+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:46.088320+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": "16de8d70-d49a-47f9-b08c-8f1ef1a47a0c",
+              "attempt_id": "ddd94e81-1d10-4b50-bace-3faa11d01a64"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:46.173280+00:00",
+              "request_id": "9f596416-943b-4943-ae53-21d086f046fe",
+              "operation_id": "16de8d70-d49a-47f9-b08c-8f1ef1a47a0c",
+              "attempt_id": "ddd94e81-1d10-4b50-bace-3faa11d01a64"
+            }
+          ],
+          "label": "attempt-1"
+        }
+      ],
+      "runtime_executions": [],
+      "details": {
+        "fault": "wrong webhook credential; runtime rejects before workflow",
+        "http_status": 403
+      }
+    },
+    {
+      "case_id": "N03",
+      "status": "PASSED",
+      "event_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+      "ticket_id": "TCK-AC98B91F19CE40C5",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-d0b298ff6f29",
+          "captured_at": "2026-11-14T13:24:48.102683+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+          "ticket_id": "TCK-AC98B91F19CE40C5",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:48.092165+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:48.092165+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:48.092165+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-ee5edb236c57",
+          "captured_at": "2026-11-14T13:24:49.302974+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+          "ticket_id": "TCK-AC98B91F19CE40C5",
+          "outbox": {
+            "state": "pending",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:48.092165+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:48.092165+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:48.092165+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:49.037572+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+              "attempt_id": "2f63e5db-143a-4917-b2b5-3a7ed775230c"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:49.223972+00:00",
+              "request_id": "8e900997-afcc-4295-aaa7-d0755ba76f2c",
+              "operation_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+              "attempt_id": "2f63e5db-143a-4917-b2b5-3a7ed775230c"
+            }
+          ],
+          "label": "attempt-1"
+        }
+      ],
+      "runtime_executions": [
+        {
+          "captured_at": "2026-11-14T13:24:49.215Z",
+          "execution_id": "2",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "error",
+          "finished": false,
+          "event_id": "8ef7f233-944d-4993-886d-a1d43479c61d",
+          "ticket_id": "TCK-AC98B91F19CE40C5",
+          "record_id": null,
+          "received": false,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local"
+          ],
+          "error_present": true,
+          "http_code": 403
+        }
+      ],
+      "details": {}
+    },
+    {
+      "case_id": "N04",
+      "status": "PASSED",
+      "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+      "ticket_id": "TCK-FEF216806E7147ED",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-6804354fca2f",
+          "captured_at": "2026-11-14T13:24:51.143148+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+          "ticket_id": "TCK-FEF216806E7147ED",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:51.134133+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-0e8f2a5404ec",
+          "captured_at": "2026-11-14T13:24:54.601658+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+          "ticket_id": "TCK-FEF216806E7147ED",
+          "outbox": {
+            "state": "pending",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:51.134133+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:52.343334+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:54.465494+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            }
+          ],
+          "label": "attempt-1"
+        },
+        {
+          "run_id": "n8n-snapshot-dbc633bd2fdd",
+          "captured_at": "2026-11-14T13:24:57.985899+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+          "ticket_id": "TCK-FEF216806E7147ED",
+          "outbox": {
+            "state": "pending",
+            "attempts": 2,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:51.134133+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:52.343334+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:54.465494+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:55.786524+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:57.894034+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            }
+          ],
+          "label": "attempt-2"
+        },
+        {
+          "run_id": "n8n-snapshot-049657c8b5ae",
+          "captured_at": "2026-11-14T13:25:09.140019+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+          "ticket_id": "TCK-FEF216806E7147ED",
+          "outbox": {
+            "state": "failed",
+            "attempts": 3,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:51.134133+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:52.343334+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:54.465494+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:55.786524+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:57.894034+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:06.921550+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "08276ad1-ed65-401f-9a27-22fed6cef3f7"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "failed",
+              "created_at": "2026-11-14T13:25:09.063252+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "08276ad1-ed65-401f-9a27-22fed6cef3f7"
+            }
+          ],
+          "label": "attempt-3"
+        },
+        {
+          "run_id": "n8n-snapshot-041ed7a22dbb",
+          "captured_at": "2026-11-14T13:25:47.964540+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+          "ticket_id": "TCK-FEF216806E7147ED",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 1
+          },
+          "inbox": {
+            "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+            "ticket_id": "TCK-FEF216806E7147ED",
+            "record_id": "da05e35a-55d5-462a-ab49-64a7c342f606",
+            "received_at": "2026-11-14T13:25:47.821498+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:51.134133+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:52.343334+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:54.465494+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:55.786524+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:57.894034+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:06.921550+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "08276ad1-ed65-401f-9a27-22fed6cef3f7"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "failed",
+              "created_at": "2026-11-14T13:25:09.063252+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "08276ad1-ed65-401f-9a27-22fed6cef3f7"
+            },
+            {
+              "name": "handoff_retry_requested",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:42.995917+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:45.356869+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "b934806b-b74b-4835-b675-794d5a700c77"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:25:47.855711+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "b934806b-b74b-4835-b675-794d5a700c77"
+            }
+          ],
+          "label": "attempt-1"
+        },
+        {
+          "run_id": "n8n-snapshot-8c8c0f46d045",
+          "captured_at": "2026-11-14T13:25:47.965540+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+          "ticket_id": "TCK-FEF216806E7147ED",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 1
+          },
+          "inbox": {
+            "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+            "ticket_id": "TCK-FEF216806E7147ED",
+            "record_id": "da05e35a-55d5-462a-ab49-64a7c342f606",
+            "received_at": "2026-11-14T13:25:47.821498+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:51.133132+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:24:51.134133+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:52.343334+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:54.465494+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "0dd962fa-da53-4dca-90a4-e0d7e83be9cd"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:24:55.786524+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:24:57.894034+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "f33d4981-ea59-4b50-a4e5-0bee4cd88632"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:06.921550+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "08276ad1-ed65-401f-9a27-22fed6cef3f7"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "failed",
+              "created_at": "2026-11-14T13:25:09.063252+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "08276ad1-ed65-401f-9a27-22fed6cef3f7"
+            },
+            {
+              "name": "handoff_retry_requested",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:42.995917+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:45.356869+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "b934806b-b74b-4835-b675-794d5a700c77"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:25:47.855711+00:00",
+              "request_id": "87c1ce63-6898-4cb2-83b7-a9df33b79980",
+              "operation_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+              "attempt_id": "b934806b-b74b-4835-b675-794d5a700c77"
+            }
+          ],
+          "label": "confirmed"
+        }
+      ],
+      "runtime_executions": [
+        {
+          "captured_at": "2026-11-14T13:25:47.853Z",
+          "execution_id": "3",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "7a116266-6479-423a-95e8-a56fd0947bb3",
+          "ticket_id": "TCK-FEF216806E7147ED",
+          "record_id": "da05e35a-55d5-462a-ab49-64a7c342f606",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        }
+      ],
+      "details": {
+        "recovery": "runtime process stopped/restarted; same event"
+      }
+    },
+    {
+      "case_id": "N05",
+      "status": "PASSED",
+      "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+      "ticket_id": "TCK-0D9C61D4BA5F4405",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-b10fdd8c8300",
+          "captured_at": "2026-11-14T13:25:51.375755+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+          "ticket_id": "TCK-0D9C61D4BA5F4405",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-80ee0f1bb8d0",
+          "captured_at": "2026-11-14T13:25:52.735758+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+          "ticket_id": "TCK-0D9C61D4BA5F4405",
+          "outbox": {
+            "state": "pending",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+            "ticket_id": "TCK-0D9C61D4BA5F4405",
+            "record_id": "dbb7c8a9-847c-439c-b118-4ebab85fce95",
+            "received_at": "2026-11-14T13:25:52.537356+00:00"
+          },
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:52.416858+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "26bfbe8c-c9d6-4d2c-8a01-931a83c02210"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:25:52.549075+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "26bfbe8c-c9d6-4d2c-8a01-931a83c02210"
+            }
+          ],
+          "label": "attempt-1"
+        },
+        {
+          "run_id": "n8n-snapshot-93dc9595b54b",
+          "captured_at": "2026-11-14T13:25:57.896391+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+          "ticket_id": "TCK-0D9C61D4BA5F4405",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 2,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+            "ticket_id": "TCK-0D9C61D4BA5F4405",
+            "record_id": "dbb7c8a9-847c-439c-b118-4ebab85fce95",
+            "received_at": "2026-11-14T13:25:52.537356+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:52.416858+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "26bfbe8c-c9d6-4d2c-8a01-931a83c02210"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:25:52.549075+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "26bfbe8c-c9d6-4d2c-8a01-931a83c02210"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:56.483154+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "c02b4678-8cb9-404d-a725-f14139c0140d"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:25:57.828940+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "c02b4678-8cb9-404d-a725-f14139c0140d"
+            }
+          ],
+          "label": "attempt-2"
+        },
+        {
+          "run_id": "n8n-snapshot-0fb842bd9211",
+          "captured_at": "2026-11-14T13:25:57.898390+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+          "ticket_id": "TCK-0D9C61D4BA5F4405",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 2,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+            "ticket_id": "TCK-0D9C61D4BA5F4405",
+            "record_id": "dbb7c8a9-847c-439c-b118-4ebab85fce95",
+            "received_at": "2026-11-14T13:25:52.537356+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:25:51.366705+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:52.416858+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "26bfbe8c-c9d6-4d2c-8a01-931a83c02210"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:25:52.549075+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "26bfbe8c-c9d6-4d2c-8a01-931a83c02210"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:25:56.483154+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "c02b4678-8cb9-404d-a725-f14139c0140d"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:25:57.828940+00:00",
+              "request_id": "19e311f1-419f-439a-8e62-31cc5ede69ba",
+              "operation_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+              "attempt_id": "c02b4678-8cb9-404d-a725-f14139c0140d"
+            }
+          ],
+          "label": "confirmed"
+        }
+      ],
+      "runtime_executions": [
+        {
+          "captured_at": "2026-11-14T13:25:52.546Z",
+          "execution_id": "4",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+          "ticket_id": "TCK-0D9C61D4BA5F4405",
+          "record_id": "dbb7c8a9-847c-439c-b118-4ebab85fce95",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        },
+        {
+          "captured_at": "2026-11-14T13:25:57.824Z",
+          "execution_id": "5",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "18124ad1-3202-48db-aa99-34633a0b3c8a",
+          "ticket_id": "TCK-0D9C61D4BA5F4405",
+          "record_id": "dbb7c8a9-847c-439c-b118-4ebab85fce95",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        }
+      ],
+      "details": {
+        "fault": "real n8n returns controlled HTTP504 after inbox commit"
+      }
+    },
+    {
+      "case_id": "N06",
+      "status": "PASSED",
+      "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+      "ticket_id": "TCK-4351EC43A73F4BC8",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-8b5ca2947e76",
+          "captured_at": "2026-11-14T13:26:00.715908+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-8e684f5dd398",
+          "captured_at": "2026-11-14T13:26:02.096760+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "outbox": {
+            "state": "sending",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+            "ticket_id": "TCK-4351EC43A73F4BC8",
+            "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+            "received_at": "2026-11-14T13:26:02.076918+00:00"
+          },
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:01.900393+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "0e27dfa9-2f96-4cf4-97d2-64da05e8a1ca"
+            }
+          ],
+          "label": "process-interrupted-1"
+        },
+        {
+          "run_id": "n8n-snapshot-3c1dab82aef3",
+          "captured_at": "2026-11-14T13:26:18.839480+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "outbox": {
+            "state": "sending",
+            "attempts": 2,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+            "ticket_id": "TCK-4351EC43A73F4BC8",
+            "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+            "received_at": "2026-11-14T13:26:02.076918+00:00"
+          },
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:01.900393+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "0e27dfa9-2f96-4cf4-97d2-64da05e8a1ca"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:18.532510+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "10de4aaa-1e27-4199-806c-0a5b73da01ea"
+            }
+          ],
+          "label": "process-interrupted-2"
+        },
+        {
+          "run_id": "n8n-snapshot-6770c2be57de",
+          "captured_at": "2026-11-14T13:26:35.129623+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "outbox": {
+            "state": "sending",
+            "attempts": 3,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+            "ticket_id": "TCK-4351EC43A73F4BC8",
+            "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+            "received_at": "2026-11-14T13:26:02.076918+00:00"
+          },
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:01.900393+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "0e27dfa9-2f96-4cf4-97d2-64da05e8a1ca"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:18.532510+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "10de4aaa-1e27-4199-806c-0a5b73da01ea"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:34.905091+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "fbe891f5-3ac8-474b-8061-6176b97e2dfd"
+            }
+          ],
+          "label": "process-interrupted-3"
+        },
+        {
+          "run_id": "n8n-snapshot-7ea80a246a7d",
+          "captured_at": "2026-11-14T13:26:51.231871+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "outbox": {
+            "state": "failed",
+            "attempts": 3,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+            "ticket_id": "TCK-4351EC43A73F4BC8",
+            "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+            "received_at": "2026-11-14T13:26:02.076918+00:00"
+          },
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:01.900393+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "0e27dfa9-2f96-4cf4-97d2-64da05e8a1ca"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:18.532510+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "10de4aaa-1e27-4199-806c-0a5b73da01ea"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:34.905091+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "fbe891f5-3ac8-474b-8061-6176b97e2dfd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "lease_expired",
+              "created_at": "2026-11-14T13:26:51.144704+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "fbe891f5-3ac8-474b-8061-6176b97e2dfd"
+            }
+          ],
+          "label": "attempt-3"
+        },
+        {
+          "run_id": "n8n-snapshot-189a55280b17",
+          "captured_at": "2026-11-14T13:26:52.634284+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 1
+          },
+          "inbox": {
+            "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+            "ticket_id": "TCK-4351EC43A73F4BC8",
+            "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+            "received_at": "2026-11-14T13:26:02.076918+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:01.900393+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "0e27dfa9-2f96-4cf4-97d2-64da05e8a1ca"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:18.532510+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "10de4aaa-1e27-4199-806c-0a5b73da01ea"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:34.905091+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "fbe891f5-3ac8-474b-8061-6176b97e2dfd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "lease_expired",
+              "created_at": "2026-11-14T13:26:51.144704+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "fbe891f5-3ac8-474b-8061-6176b97e2dfd"
+            },
+            {
+              "name": "handoff_retry_requested",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:51.266484+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:52.370560+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "5446cd1f-b50b-4352-834f-a0f7e874a837"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:26:52.532689+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "5446cd1f-b50b-4352-834f-a0f7e874a837"
+            }
+          ],
+          "label": "attempt-1"
+        },
+        {
+          "run_id": "n8n-snapshot-4e3b6d573938",
+          "captured_at": "2026-11-14T13:26:52.637283+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 1
+          },
+          "inbox": {
+            "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+            "ticket_id": "TCK-4351EC43A73F4BC8",
+            "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+            "received_at": "2026-11-14T13:26:02.076918+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:00.705901+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:01.900393+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "0e27dfa9-2f96-4cf4-97d2-64da05e8a1ca"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:18.532510+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "10de4aaa-1e27-4199-806c-0a5b73da01ea"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:34.905091+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "fbe891f5-3ac8-474b-8061-6176b97e2dfd"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "lease_expired",
+              "created_at": "2026-11-14T13:26:51.144704+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "fbe891f5-3ac8-474b-8061-6176b97e2dfd"
+            },
+            {
+              "name": "handoff_retry_requested",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:51.266484+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:52.370560+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "5446cd1f-b50b-4352-834f-a0f7e874a837"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:26:52.532689+00:00",
+              "request_id": "7e3c3180-c783-49c9-aa4e-65d573d0a318",
+              "operation_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+              "attempt_id": "5446cd1f-b50b-4352-834f-a0f7e874a837"
+            }
+          ],
+          "label": "confirmed"
+        }
+      ],
+      "runtime_executions": [
+        {
+          "captured_at": "2026-11-14T13:26:02.091Z",
+          "execution_id": "6",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        },
+        {
+          "captured_at": "2026-11-14T13:26:18.832Z",
+          "execution_id": "7",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        },
+        {
+          "captured_at": "2026-11-14T13:26:35.125Z",
+          "execution_id": "8",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        },
+        {
+          "captured_at": "2026-11-14T13:26:52.529Z",
+          "execution_id": "9",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "108d1e00-2506-4df7-8385-f27f9b54045f",
+          "ticket_id": "TCK-4351EC43A73F4BC8",
+          "record_id": "8c3d687c-13c5-4c41-bd6f-a9bb92725d0a",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        }
+      ],
+      "details": {
+        "fault": "loopback TCP relay holds genuine n8n ACK after commit; kill worker PID",
+        "interruptions": [
+          {
+            "attempt": 1,
+            "worker_pid": 20864,
+            "process_stopped": true
+          },
+          {
+            "attempt": 2,
+            "worker_pid": 12628,
+            "process_stopped": true
+          },
+          {
+            "attempt": 3,
+            "worker_pid": 27436,
+            "process_stopped": true
+          }
+        ],
+        "lease_clock": "real; no timestamp or state edits"
+      }
+    },
+    {
+      "case_id": "N07",
+      "status": "PASSED",
+      "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+      "ticket_id": "TCK-F7FA9D4A43A14DA2",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-0cdd125c1dff",
+          "captured_at": "2026-11-14T13:26:54.631487+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+          "ticket_id": "TCK-F7FA9D4A43A14DA2",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:54.623276+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-affc5f1ade86",
+          "captured_at": "2026-11-14T13:26:55.993975+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+          "ticket_id": "TCK-F7FA9D4A43A14DA2",
+          "outbox": {
+            "state": "pending",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+            "ticket_id": "TCK-F7FA9D4A43A14DA2",
+            "record_id": "7ad3e9d6-cb45-4c17-9ecd-d82f893bb4c1",
+            "received_at": "2026-11-14T13:26:55.900960+00:00"
+          },
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "FAILED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:54.623276+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:55.779939+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "f09304fc-7e78-4a40-b5b0-67e58fd4e41a"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:26:55.914957+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "f09304fc-7e78-4a40-b5b0-67e58fd4e41a"
+            }
+          ],
+          "label": "attempt-1"
+        },
+        {
+          "run_id": "n8n-snapshot-57ce94c7dc23",
+          "captured_at": "2026-11-14T13:26:59.171884+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+          "ticket_id": "TCK-F7FA9D4A43A14DA2",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 2,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+            "ticket_id": "TCK-F7FA9D4A43A14DA2",
+            "record_id": "7ad3e9d6-cb45-4c17-9ecd-d82f893bb4c1",
+            "received_at": "2026-11-14T13:26:55.900960+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:54.623276+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:55.779939+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "f09304fc-7e78-4a40-b5b0-67e58fd4e41a"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:26:55.914957+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "f09304fc-7e78-4a40-b5b0-67e58fd4e41a"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:58.947549+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "5785dbef-94e6-42cb-abf7-32871594c075"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:26:59.094132+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "5785dbef-94e6-42cb-abf7-32871594c075"
+            }
+          ],
+          "label": "attempt-2"
+        },
+        {
+          "run_id": "n8n-snapshot-0aadb2f0b603",
+          "captured_at": "2026-11-14T13:26:59.173884+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+          "ticket_id": "TCK-F7FA9D4A43A14DA2",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 2,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+            "ticket_id": "TCK-F7FA9D4A43A14DA2",
+            "record_id": "7ad3e9d6-cb45-4c17-9ecd-d82f893bb4c1",
+            "received_at": "2026-11-14T13:26:55.900960+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:54.622275+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:26:54.623276+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:55.779939+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "f09304fc-7e78-4a40-b5b0-67e58fd4e41a"
+            },
+            {
+              "name": "handoff_failed",
+              "outcome": "pending",
+              "created_at": "2026-11-14T13:26:55.914957+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "f09304fc-7e78-4a40-b5b0-67e58fd4e41a"
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:26:58.947549+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "5785dbef-94e6-42cb-abf7-32871594c075"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:26:59.094132+00:00",
+              "request_id": "824295b1-f941-42b9-ac11-3a4697b1aa42",
+              "operation_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+              "attempt_id": "5785dbef-94e6-42cb-abf7-32871594c075"
+            }
+          ],
+          "label": "confirmed"
+        }
+      ],
+      "runtime_executions": [
+        {
+          "captured_at": "2026-11-14T13:26:55.912Z",
+          "execution_id": "10",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+          "ticket_id": "TCK-F7FA9D4A43A14DA2",
+          "record_id": "7ad3e9d6-cb45-4c17-9ecd-d82f893bb4c1",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        },
+        {
+          "captured_at": "2026-11-14T13:26:59.089Z",
+          "execution_id": "11",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "72187924-13eb-41c9-a57e-8636a81d6b96",
+          "ticket_id": "TCK-F7FA9D4A43A14DA2",
+          "record_id": "7ad3e9d6-cb45-4c17-9ecd-d82f893bb4c1",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        }
+      ],
+      "details": {}
+    },
+    {
+      "case_id": "N08",
+      "status": "PASSED",
+      "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+      "ticket_id": "TCK-0D4D1503F9364BB2",
+      "snapshots": [
+        {
+          "run_id": "n8n-snapshot-49c6f06b83cc",
+          "captured_at": "2026-11-14T13:27:00.876298+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+          "ticket_id": "TCK-0D4D1503F9364BB2",
+          "outbox": {
+            "state": "pending",
+            "attempts": 0,
+            "retry_cycles": 0
+          },
+          "inbox": null,
+          "ack_matches_persisted_inbox": false,
+          "local_delivery_status": "NOT_EXECUTED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": null,
+              "attempt_id": null
+            }
+          ],
+          "label": "queued"
+        },
+        {
+          "run_id": "n8n-snapshot-16a3f1d00b67",
+          "captured_at": "2026-11-14T13:27:02.370002+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+          "ticket_id": "TCK-0D4D1503F9364BB2",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+            "ticket_id": "TCK-0D4D1503F9364BB2",
+            "record_id": "822d70d5-3419-4da8-b6d6-c5d327ee48db",
+            "received_at": "2026-11-14T13:27:02.245034+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:02.086995+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+              "attempt_id": "c2bba20b-81b0-4305-9e32-0cd559dd613f"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:27:02.262033+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+              "attempt_id": "c2bba20b-81b0-4305-9e32-0cd559dd613f"
+            }
+          ],
+          "label": "attempt-1"
+        },
+        {
+          "run_id": "n8n-snapshot-10f8af20b02a",
+          "captured_at": "2026-11-14T13:27:02.373001+00:00",
+          "scope": "synthetic_local_persistence_only",
+          "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+          "ticket_id": "TCK-0D4D1503F9364BB2",
+          "outbox": {
+            "state": "confirmed",
+            "attempts": 1,
+            "retry_cycles": 0
+          },
+          "inbox": {
+            "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+            "ticket_id": "TCK-0D4D1503F9364BB2",
+            "record_id": "822d70d5-3419-4da8-b6d6-c5d327ee48db",
+            "received_at": "2026-11-14T13:27:02.245034+00:00"
+          },
+          "ack_matches_persisted_inbox": true,
+          "local_delivery_status": "PASSED",
+          "operator_supplied_runtime_reference": {
+            "execution_id": null,
+            "version": null
+          },
+          "runtime_reference_verified": false,
+          "n8n_live": "NOT_EXECUTED",
+          "events": [
+            {
+              "name": "ticket_created",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_queued",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+              "attempt_id": null
+            },
+            {
+              "name": "ticket_confirmed",
+              "outcome": "created",
+              "created_at": "2026-11-14T13:27:00.863301+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": null,
+              "attempt_id": null
+            },
+            {
+              "name": "handoff_attempted",
+              "outcome": null,
+              "created_at": "2026-11-14T13:27:02.086995+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+              "attempt_id": "c2bba20b-81b0-4305-9e32-0cd559dd613f"
+            },
+            {
+              "name": "handoff_acknowledged",
+              "outcome": "confirmed",
+              "created_at": "2026-11-14T13:27:02.262033+00:00",
+              "request_id": "4467c663-86ca-49ac-9581-e66ea4b5a82b",
+              "operation_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+              "attempt_id": "c2bba20b-81b0-4305-9e32-0cd559dd613f"
+            }
+          ],
+          "label": "confirmed"
+        }
+      ],
+      "runtime_executions": [
+        {
+          "captured_at": "2026-11-14T13:27:02.257Z",
+          "execution_id": "12",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+          "ticket_id": "TCK-0D4D1503F9364BB2",
+          "record_id": "822d70d5-3419-4da8-b6d6-c5d327ee48db",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        },
+        {
+          "captured_at": "2026-11-14T13:27:02.468Z",
+          "execution_id": "13",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "success",
+          "finished": true,
+          "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+          "ticket_id": "TCK-0D4D1503F9364BB2",
+          "record_id": "822d70d5-3419-4da8-b6d6-c5d327ee48db",
+          "received": true,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local",
+            "ACK apos commit"
+          ],
+          "error_present": false,
+          "http_code": null
+        },
+        {
+          "captured_at": "2026-11-14T13:27:02.665Z",
+          "execution_id": "14",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "error",
+          "finished": false,
+          "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+          "ticket_id": "TCK-0D4D1503F9364BB2",
+          "record_id": null,
+          "received": false,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local"
+          ],
+          "error_present": true,
+          "http_code": 422
+        },
+        {
+          "captured_at": "2026-11-14T13:27:02.813Z",
+          "execution_id": "16",
+          "workflow_id": "zANU3IvUs4UTIWL2",
+          "status": "error",
+          "finished": false,
+          "event_id": "b39c1065-abd0-4dc5-8f1d-1ae684f50eb4",
+          "ticket_id": "TCK-0D4D1503F9364BB2",
+          "record_id": null,
+          "received": false,
+          "nodes": [
+            "Webhook autenticado",
+            "Persistir fila local"
+          ],
+          "error_present": true,
+          "http_code": 409
+        }
+      ],
+      "details": {
+        "requests": [
+          {
+            "variant": "replay",
+            "http_status": 200
+          },
+          {
+            "variant": "extra",
+            "http_status": 500
+          },
+          {
+            "variant": "missing_event",
+            "http_status": 500
+          },
+          {
+            "variant": "conflict",
+            "http_status": 500
+          }
+        ]
+      }
+    }
+  ]
+}

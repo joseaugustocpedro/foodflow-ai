@@ -1,0 +1,222 @@
+{
+  "captured_at": "2026-11-15T02:30:05.309394+00:00",
+  "scope": "read_only_runtime_metadata",
+  "executions": [
+    {
+      "id": 1,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:24:43.243",
+      "stoppedAt": "2026-11-14 13:24:43.375",
+      "deletedAt": "2026-11-14 12:24:43.377",
+      "workflowVersionId": "636b4ef9-b2ea-4a92-8f4f-76f091f3bae6"
+    },
+    {
+      "id": 2,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "error",
+      "finished": 0,
+      "startedAt": "2026-11-14 13:24:49.136",
+      "stoppedAt": "2026-11-14 13:24:49.212",
+      "deletedAt": "2026-11-14 12:24:49.213",
+      "workflowVersionId": "5caaac92-d29b-4330-9c42-cb419cd691e2"
+    },
+    {
+      "id": 3,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:25:47.751",
+      "stoppedAt": "2026-11-14 13:25:47.849",
+      "deletedAt": "2026-11-14 12:25:47.850",
+      "workflowVersionId": "18c2de3b-e81a-422c-8cde-d28b868b663a"
+    },
+    {
+      "id": 4,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:25:52.508",
+      "stoppedAt": "2026-11-14 13:25:52.544",
+      "deletedAt": "2026-11-14 12:25:52.544",
+      "workflowVersionId": "c98454c2-a786-4adc-90da-561862846089"
+    },
+    {
+      "id": 5,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:25:57.783",
+      "stoppedAt": "2026-11-14 13:25:57.821",
+      "deletedAt": "2026-11-14 12:25:57.822",
+      "workflowVersionId": "fd82456e-2014-4c2a-ab50-5d9b5c750a12"
+    },
+    {
+      "id": 6,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:26:02.042",
+      "stoppedAt": "2026-11-14 13:26:02.086",
+      "deletedAt": "2026-11-14 12:26:02.086",
+      "workflowVersionId": "fd82456e-2014-4c2a-ab50-5d9b5c750a12"
+    },
+    {
+      "id": 7,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:26:18.759",
+      "stoppedAt": "2026-11-14 13:26:18.828",
+      "deletedAt": "2026-11-14 12:26:18.829",
+      "workflowVersionId": "fd82456e-2014-4c2a-ab50-5d9b5c750a12"
+    },
+    {
+      "id": 8,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:26:35.074",
+      "stoppedAt": "2026-11-14 13:26:35.121",
+      "deletedAt": "2026-11-14 12:26:35.121",
+      "workflowVersionId": "fd82456e-2014-4c2a-ab50-5d9b5c750a12"
+    },
+    {
+      "id": 9,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:26:52.480",
+      "stoppedAt": "2026-11-14 13:26:52.525",
+      "deletedAt": "2026-11-14 12:26:52.525",
+      "workflowVersionId": "fd82456e-2014-4c2a-ab50-5d9b5c750a12"
+    },
+    {
+      "id": 10,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:26:55.866",
+      "stoppedAt": "2026-11-14 13:26:55.909",
+      "deletedAt": "2026-11-14 12:26:55.909",
+      "workflowVersionId": "99415bd8-05c1-4f34-9a4d-5d34c7369805"
+    },
+    {
+      "id": 11,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:26:59.047",
+      "stoppedAt": "2026-11-14 13:26:59.087",
+      "deletedAt": "2026-11-14 12:26:59.087",
+      "workflowVersionId": "ffe5af71-f7d3-44e4-8fa0-74c26124757f"
+    },
+    {
+      "id": 12,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:27:02.206",
+      "stoppedAt": "2026-11-14 13:27:02.254",
+      "deletedAt": "2026-11-14 12:27:02.254",
+      "workflowVersionId": "ffe5af71-f7d3-44e4-8fa0-74c26124757f"
+    },
+    {
+      "id": 13,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "success",
+      "finished": 1,
+      "startedAt": "2026-11-14 13:27:02.425",
+      "stoppedAt": "2026-11-14 13:27:02.464",
+      "deletedAt": "2026-11-14 12:27:02.465",
+      "workflowVersionId": "ffe5af71-f7d3-44e4-8fa0-74c26124757f"
+    },
+    {
+      "id": 14,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "error",
+      "finished": 0,
+      "startedAt": "2026-11-14 13:27:02.527",
+      "stoppedAt": "2026-11-14 13:27:02.627",
+      "deletedAt": "2026-11-14 12:27:02.629",
+      "workflowVersionId": "ffe5af71-f7d3-44e4-8fa0-74c26124757f"
+    },
+    {
+      "id": 15,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "error",
+      "finished": 0,
+      "startedAt": "2026-11-14 13:27:02.697",
+      "stoppedAt": "2026-11-14 13:27:02.746",
+      "deletedAt": "2026-11-14 12:27:02.747",
+      "workflowVersionId": "ffe5af71-f7d3-44e4-8fa0-74c26124757f"
+    },
+    {
+      "id": 16,
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "status": "error",
+      "finished": 0,
+      "startedAt": "2026-11-14 13:27:02.770",
+      "stoppedAt": "2026-11-14 13:27:02.811",
+      "deletedAt": "2026-11-14 12:27:02.812",
+      "workflowVersionId": "ffe5af71-f7d3-44e4-8fa0-74c26124757f"
+    }
+  ],
+  "workflow_versions": [
+    {
+      "versionId": "636b4ef9-b2ea-4a92-8f4f-76f091f3bae6",
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "name": null,
+      "createdAt": "2026-11-14 13:24:39.368",
+      "nodes_connections_sha256": "eff427c1a88f2193eeed45d5e38ad5ee4b205ed6ab7cad4a0774a6b7b5669a84"
+    },
+    {
+      "versionId": "5caaac92-d29b-4330-9c42-cb419cd691e2",
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "name": null,
+      "createdAt": "2026-11-14 13:24:46.330",
+      "nodes_connections_sha256": "46f36a184e198d45936a3fd6f0dd6e78c91c7eadc7b45f150aa25fdf02997bd0"
+    },
+    {
+      "versionId": "18c2de3b-e81a-422c-8cde-d28b868b663a",
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "name": null,
+      "createdAt": "2026-11-14 13:24:49.380",
+      "nodes_connections_sha256": "eff427c1a88f2193eeed45d5e38ad5ee4b205ed6ab7cad4a0774a6b7b5669a84"
+    },
+    {
+      "versionId": "c98454c2-a786-4adc-90da-561862846089",
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "name": null,
+      "createdAt": "2026-11-14 13:25:49.310",
+      "nodes_connections_sha256": "5fc17e74bea3407287c533a249b6cfaa0c29740d228437feda95dd2c8600e97c"
+    },
+    {
+      "versionId": "fd82456e-2014-4c2a-ab50-5d9b5c750a12",
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "name": null,
+      "createdAt": "2026-11-14 13:25:52.804",
+      "nodes_connections_sha256": "eff427c1a88f2193eeed45d5e38ad5ee4b205ed6ab7cad4a0774a6b7b5669a84"
+    },
+    {
+      "versionId": "99415bd8-05c1-4f34-9a4d-5d34c7369805",
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "name": null,
+      "createdAt": "2026-11-14 13:26:52.808",
+      "nodes_connections_sha256": "05016896679b46ed2d1bfdc9e9d60a50216d29a78a0a1a91b59d2aa14e979d64"
+    },
+    {
+      "versionId": "ffe5af71-f7d3-44e4-8fa0-74c26124757f",
+      "workflowId": "zANU3IvUs4UTIWL2",
+      "name": null,
+      "createdAt": "2026-11-14 13:26:56.058",
+      "nodes_connections_sha256": "eff427c1a88f2193eeed45d5e38ad5ee4b205ed6ab7cad4a0774a6b7b5669a84"
+    }
+  ],
+  "credential_count": 3,
+  "credential_types": [
+    "httpHeaderAuth"
+  ],
+  "hook_ids_match_database": true
+}

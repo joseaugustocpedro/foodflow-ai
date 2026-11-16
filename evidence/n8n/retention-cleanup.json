@@ -1,0 +1,7 @@
+{
+  "discarded_payload_rows_before": 16,
+  "payload_rows_after": 0,
+  "execution_metadata_preserved": true,
+  "secure_delete": true,
+  "limit": "Local SQLite cleanup, not a forensic disk-erasure guarantee"
+}

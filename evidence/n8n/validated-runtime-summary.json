@@ -1,0 +1,9 @@
+{
+  "run_id": "stage06-20261114T132347Z-e8fe98",
+  "n8n_version": "2.47.7",
+  "node_version": "24.22.3",
+  "bind": "127.0.0.1",
+  "retention": "no success/error payload history",
+  "workflow_original_sha256": "39c312edc3f193e6f94cbc1d28d2f2c56a50aea28b556db35ca143b3d30a4c02",
+  "llm_online": "NOT_EXECUTED"
+}
