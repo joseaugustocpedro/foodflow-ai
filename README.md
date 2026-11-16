@@ -24,7 +24,7 @@ A interface **Motion Showcase V2** tem animações de navegação, estados de at
 
 ### Opção 1 — Executável Windows (para demonstração)
 
-O binário não está no histórico de código: será disponibilizado separadamente na área **Releases** deste repositório após o envio do pacote de lançamento. Extraia o pacote Windows, abra `FoodFlow AI.exe` e mantenha a janela de controle aberta enquanto usa o navegador. A janela oferece **Abrir interface**, **Nova demo** e **Encerrar**. Não é necessário instalar Python na máquina que executa o programa, mas um teste em Windows limpo sem Python ainda não foi realizado. [Instruções completas](docs/EXECUCAO.md).
+O executável está disponível na **[Release pública v1.0.0 para Windows](https://github.com/joseaugustocpedro/foodflow-ai/releases/tag/v1.0.0)**, separado do histórico do código-fonte. [Baixar ZIP Windows](https://github.com/joseaugustocpedro/foodflow-ai/releases/download/v1.0.0/FoodFlow_Windows_v1.0.0.zip). Extraia o pacote Windows, abra `FoodFlow AI.exe` e mantenha a janela de controle aberta enquanto usa o navegador. A janela oferece **Abrir interface**, **Nova demo** e **Encerrar**. Não é necessário instalar Python na máquina que executa o programa, mas um teste em Windows limpo sem Python ainda não foi realizado. [Instruções completas](docs/EXECUCAO.md).
 
 ### Opção 2 — Executar pelo código-fonte
 
