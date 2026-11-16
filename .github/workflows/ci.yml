@@ -1,0 +1,75 @@
+name: offline-contracts
+on:
+  workflow_dispatch:
+    inputs:
+      ui:
+        description: Run isolated local browser checks
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      FOODFLOW_ALLOW_ONLINE_LLM: 'false'
+      FOODFLOW_WORKER: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r backend/requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python -m ruff check backend scripts
+      - run: python -m compileall -q backend scripts
+      - run: python scripts/check_fixtures.py
+      - run: python -m pytest backend/tests -q
+      - run: python scripts/evaluate.py --mode all-offline --output artifacts/current-ci/evaluations
+      - run: python scripts/evaluate.py --pilot --mode all-offline --output artifacts/current-ci/pilot
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offline-${{ matrix.os }}-${{ github.run_id }}
+          path: artifacts/current-ci
+  ui:
+    if: github.event_name == 'workflow_dispatch' && inputs.ui
+    runs-on: ubuntu-latest
+    env:
+      FOODFLOW_ALLOW_ONLINE_LLM: 'false'
+      FOODFLOW_WORKER: 'false'
+      FOODFLOW_BROWSER: chromium
+      FOODFLOW_VERIFICATION_DIR: artifacts/current-ci/browser
+      FOODFLOW_EVIDENCE_RUN_ID: ci-${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python -m pip install -r backend/requirements.txt
+      - run: npm install --no-save playwright@1.62.1
+      - run: npx playwright install --with-deps chromium
+      - name: Local HTTP and browser only
+        run: |
+          python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --no-access-log &
+          PID=$!
+          trap 'kill "$PID"' EXIT
+          for attempt in {1..30}; do curl --fail http://127.0.0.1:8000/health && break; sleep 1; done
+          python scripts/smoke_http.py
+          node scripts/ui_check.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-${{ github.run_id }}
+          path: |
+            artifacts/current-ci/browser/ui-results.json
+            artifacts/current-ci/browser/http-smoke.json
+            artifacts/current-ci/browser/*.png
