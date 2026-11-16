@@ -10,7 +10,7 @@
 
 **Three demos:** ORD-1001: authorized lookup with a traceable source; ORD-1002: explicit human confirmation before creating a durable ticket; ORD-1004: cross-customer access denied for Customer A.
 
-**Run from source:** Python 3.12, install `backend/requirements.txt`, then execute `python scripts/run_local.py` and open `http://127.0.0.1:8000`. The default demo needs no online LLM or n8n. For a packaged Windows build, see [Windows instructions](docs/EXECUCAO.md). Do not expose the local server to the public internet.
+**Run from source:** Python 3.12, install `backend/requirements.txt`, then execute `python scripts/run_local.py` and open `http://127.0.0.1:8000`. The default demo needs no online LLM or n8n. Download the packaged Windows build from the [v1.0.0 release](https://github.com/joseaugustocpedro/foodflow-ai/releases/tag/v1.0.0) ([direct ZIP download](https://github.com/joseaugustocpedro/foodflow-ai/releases/download/v1.0.0/FoodFlow_Windows_v1.0.0.zip)); see [Windows instructions](docs/EXECUCAO.md). Do not expose the local server to the public internet.
 
 **Reported validation:** 118 passed + 2 skipped tests (112 backend and 6 Windows launcher), 86 offline evaluation scenarios, 6 HTTP checks, 49 browser checks. Real n8n validation (N01–N08) took place separately on a local runtime, with preserved evidence. The online LLM, remote CI and deployment have **not** been executed. The GitHub Actions workflow is manual-trigger-only pending approval.
 
