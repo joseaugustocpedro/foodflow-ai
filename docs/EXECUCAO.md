@@ -2,7 +2,7 @@
 
 ## Aplicativo Windows x64
 
-O executável Windows é distribuído separadamente por **GitHub Releases**, após o envio do pacote de lançamento. Ele não é incluído no histórico de código.
+O executável Windows é distribuído separadamente na **[GitHub Release v1.0.0](https://github.com/joseaugustocpedro/foodflow-ai/releases/tag/v1.0.0)** ([download do ZIP](https://github.com/joseaugustocpedro/foodflow-ai/releases/download/v1.0.0/FoodFlow_Windows_v1.0.0.zip)). Ele não é incluído no histórico de código.
 
 1. Extraia o pacote Windows em uma pasta local.
 2. Dê dois cliques em **FoodFlow AI.exe**.
