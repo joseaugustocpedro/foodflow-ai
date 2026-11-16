@@ -1,0 +1,110 @@
+{
+  "name": "FoodFlow isolated validation N05_ack_lost",
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "none"
+  },
+  "pinData": {},
+  "nodes": [
+    {
+      "id": "webhook",
+      "name": "Webhook autenticado",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "webhookId": "foodflow-demo-escalation",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "foodflow-demo-escalation",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "CONFIGURE_LOCAL_WEBHOOK_CREDENTIAL",
+          "name": "FoodFlow Webhook local"
+        }
+      }
+    },
+    {
+      "id": "persist",
+      "name": "Persistir fila local",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        490,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/internal/queue",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.body }}",
+        "options": {
+          "timeout": 2500,
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "CONFIGURE_LOCAL_INBOX_CREDENTIAL",
+          "name": "FoodFlow Inbox local"
+        }
+      }
+    },
+    {
+      "id": "ack",
+      "name": "ACK apos commit",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        740,
+        300
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\"test_fault\":\"ack_lost_after_commit\"} }}",
+        "options": {
+          "responseCode": 504
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook autenticado": {
+      "main": [
+        [
+          {
+            "node": "Persistir fila local",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Persistir fila local": {
+      "main": [
+        [
+          {
+            "node": "ACK apos commit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
