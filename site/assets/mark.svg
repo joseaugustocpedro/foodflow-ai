@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FoodFlow AI">
+  <path d="M13 43V20h17v22h21V27" fill="none" stroke="#ff6f50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="13" cy="44" r="7" fill="#ff6f50" stroke="#171d1f" stroke-width="2"/>
+  <circle cx="30" cy="20" r="7" fill="#ff6f50" stroke="#171d1f" stroke-width="2"/>
+  <circle cx="51" cy="27" r="7" fill="#ff6f50" stroke="#171d1f" stroke-width="2"/>
+</svg>
