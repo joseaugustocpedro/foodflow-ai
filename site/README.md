@@ -1,60 +1,37 @@
-# FoodFlow AI — Website / Showcase
+# FoodFlow AI — Showcase Motion V2
 
-Landing page de portfólio, responsiva e sem dependências de build, baseada nas evidências públicas do [FoodFlow AI](https://github.com/joseaugustocpedro/foodflow-ai).
+Website estático de portfólio, sem backend público, preparado para GitHub Pages. O app FoodFlow AI original é independente e roda localmente.
 
-## Abrir localmente
+## Ver o site
 
-Abra `index.html` no navegador. Também pode iniciar um servidor estático na pasta `site`:
+Abra `index.html` ou rode `python -m http.server 8080` dentro de `site/`. A navegação é estática, não há etapa de build ou dependências npm.
 
-```bash
-python -m http.server 8080
-```
+## Funcionalidades
 
-Em seguida abra `http://localhost:8080`.
+- Visual grafite/coral alinhado ao projeto original; movimento cinematográfico no título e leve parallax de desktop.
+- Scroll reveals progressivos, barra de leitura e navegação ativa.
+- Três cenários de **simulação determinística** (ORD-1001, ORD-1002 e ORD-1004) com progresso visual, validação e confirmação ilustrativa.
+- Arquitetura animada em seis etapas com replay manual.
+- Testes documentados com contadores em entrada; imagens originais com zoom modal; vídeo de 29 segundos do protótipo real.
+- Transições curtas, design responsivo, teclado, `prefers-reduced-motion` e opção **EFEITOS ON/OFF**.
 
-Não é necessário instalar Node.js, configurar variáveis de ambiente, criar banco de dados ou fornecer credenciais.
+O site usa JavaScript nativo e não carrega bibliotecas de animação. O controle dos efeitos armazena uma preferência no `localStorage` do navegador, quando permitido. Não armazena dados de visitantes nem faz chamadas à API FoodFlow.
 
-## O que o site faz
+## Transparência
 
-- Landing page com informações verificáveis do protótipo.
-- Demo **visual, determinística e independente** dos cenários ORD-1001, ORD-1002 e ORD-1004.
-- Ilustra consulta com fonte, solicitação sujeita à confirmação humana e bloqueio de acesso.
-- Galeria com capturas reais via URLs públicas do repositório.
-- Links para documentação, GitHub, vídeo e release Windows.
-- Página responsiva, navegação por teclado, foco visível, semântica HTML e suporte a `prefers-reduced-motion`.
-- SEO básico com metadados, `robots.txt` e `sitemap.xml`.
+Os números (118 testes aprovados, 86/86 cenários offline, 49 verificações no navegador, N01–N08 de n8n) são resultados documentados em novembro/2026, **não** indicadores de clientes reais. O LLM online não foi executado. Nenhuma solicitação é gravada por esta página. Imagens e WebM são servidos do repositório público e podem não aparecer offline.
 
-## O que ele **não** faz
+O pacote Windows está disponível em [v1.0.0](https://github.com/joseaugustocpedro/foodflow-ai/releases/tag/v1.0.0). NÃO exponha o servidor local a usuários externos.
 
-- Não executa FastAPI nem n8n.
-- Não chama IA online.
-- Não armazena dados de clientes, pedidos ou tickets.
-- Não publica as APIs locais do FoodFlow na internet.
-- Não representa um serviço comercial ou pronto para produção.
+## Arquivos
 
-A demonstração altera somente a interface do navegador. Não confundir os resultados visuais com execução do backend real.
+`index.html` — estrutura, semântica e SEO.
+`styles.css` — layout, efeitos, responsividade.
+`app.js` — demo determinística.
+`motion.js` — efeitos de rolagem, contadores, arquitetura guiada, galeria e preferência de movimento.
+`assets/` — marca e favicon SVG.
+`MOTION_DESIGN_NOTES.md` — decisões, referências e melhorias possíveis.
 
-## Organização
+## Publicação
 
-- `index.html`: conteúdo, links e estrutura semântica.
-- `styles.css`: visual, layout e responsividade.
-- `app.js`: demonstração guiada, navegação mobile, copiar comandos e interações.
-- `assets/`: SVG da marca e favicon.
-
-## Publicar com GitHub Pages
-
-O workflow `.github/workflows/deploy-showcase.yml` (na raiz do repositório) publica **somente** a pasta `site/`. Ele usa `workflow_dispatch` para evitar publicação automática. Após mesclar a branch contendo este website:
-
-1. Abra **Settings → Pages** no repositório e selecione **GitHub Actions** em *Build and deployment*.
-2. Abra **Actions → Deploy FoodFlow Showcase → Run workflow**, selecione a branch principal e execute.
-3. Verifique a URL `https://joseaugustocpedro.github.io/foodflow-ai/` quando o GitHub confirmar o deploy.
-
-Observação: a URL acima é o endereço **esperado**, não indica que a publicação já tenha ocorrido.
-
-## Fontes e limitação das imagens
-
-As capturas mostradas na galeria são arquivos públicos em `/media/` do repositório original, carregados por `raw.githubusercontent.com`. Elas dependem de internet; a landing page e a demo funcionam localmente sem essas imagens. As fontes Google Fonts são opcionais e também usam fallback local.
-
-## Autoria, escopo e licenciamento
-
-Projeto original com direção, requisitos e validação humana e implementação assistida por Codex. O website de apresentação reutiliza informações públicas do projeto e não reivindica vínculo com o iFood. Observe os termos da licença MIT do repositório.
+O workflow `.github/workflows/deploy-showcase.yml` publica somente `site/` mediante disparo manual em GitHub Actions. Não publica backend, SQLite nem scripts de avaliação.
