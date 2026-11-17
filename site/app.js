@@ -39,6 +39,15 @@ const byId = id => document.getElementById(id);
 const chatArea = byId('chat-area');
 const actionArea = byId('demo-actions');
 const tabButtons = Array.from(document.querySelectorAll('.scenario-tab'));
+const prefersLessMotion = () => document.documentElement.classList.contains('motion-off') || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const demoWait = ms => new Promise(resolve => setTimeout(resolve, prefersLessMotion() ? 0 : ms));
+function updateTrace(progress, label) {
+  const bar = byId('trace-progress');
+  const text = byId('trace-label');
+  if(bar)bar.style.transform = `scaleX(${Math.max(0, Math.min(1, progress / 100))})`;
+  if(text)text.textContent = label;
+}
+
 
 function escapeText(s) {
   return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -60,6 +69,11 @@ function selectScenario(id, focus=false) {
   if (!SCENARIOS[id] || busy) return;
   currentScenario=id;
   simulationStatus='idle';
+  updateTrace(0, 'AGUARDANDO EXECUÇÃO');
+  const main=byId('demo-panel');
+  main.classList.remove('is-updating');
+  void main.offsetWidth;
+  if(!prefersLessMotion())main.classList.add('is-updating');
   const s=SCENARIOS[id];
   tabButtons.forEach(tab=>{
     const active=tab.dataset.scenario===id;
@@ -77,6 +91,7 @@ function selectScenario(id, focus=false) {
   byId('evidence-access').textContent='Pendente';
   byId('evidence-record').textContent='Aguardando';
   byId('evidence-note').textContent='A verificação de titularidade ocorre antes de publicar os dados do pedido.';
+  chatArea.setAttribute('aria-busy','false');
   chatArea.innerHTML = `<div class="chat-placeholder"><div class="placeholder-symbol">✳</div><strong>${escapeText(s.placeholder)}</strong><p>${escapeText(s.description)}</p></div>`;
   setStages(0);
   resetAction();
@@ -96,16 +111,32 @@ async function runSimulation() {
   const s=SCENARIOS[id];
   simulationStatus='running';
   chatArea.innerHTML='';
+  chatArea.setAttribute('aria-busy','true');
+  updateTrace(10, 'INICIANDO CENÁRIO');
   addMessage('user',escapeText(s.question));
   const btn=byId('demo-run');
   btn.disabled=true;
   btn.textContent='Verificando…';
-  byId('demo-action-hint').textContent='Execução demonstrativa, sem servidor.';
-  await new Promise(resolve=>setTimeout(resolve,500));
+  byId('demo-action-hint').textContent='Roteiro ilustrativo, sem servidor.';
+  const processing=document.createElement('div');
+  processing.className='demo-processing';
+  processing.innerHTML='<span class="demo-spinner" aria-hidden="true"></span><span>Conferindo a titularidade fictícia…</span>';
+  chatArea.appendChild(processing);
+  await demoWait(330);
+  updateTrace(48, 'VALIDANDO ACESSO');
+  processing.lastElementChild.textContent=id==='1004'?'Aplicando regra de acesso…':'Consultando registro sintético…';
+  await demoWait(410);
+  updateTrace(100,id==='1004'?'ACESSO BLOQUEADO':'VERIFICAÇÃO CONCLUÍDA');
+  processing.remove();
   addMessage(id==='1004'?'system alert':'system',s.response);
+  chatArea.setAttribute('aria-busy','false');
   byId('evidence-access').textContent=s.evidence.access;
   byId('evidence-record').textContent=s.evidence.record;
   byId('evidence-note').textContent=s.evidence.note;
+  const evidence=document.querySelector('.evidence-panel');
+  evidence.classList.remove('evidence-updated');
+  void evidence.offsetWidth;
+  if(!prefersLessMotion()) evidence.classList.add('evidence-updated');
   if(id==='1002') {
     setStages(1);
     simulationStatus='pending';
@@ -139,6 +170,7 @@ function completeProposal(confirmed) {
     byId('evidence-note').textContent='Fluxo encerrado sem registro de solicitação.';
   }
   setStages(2);
+  updateTrace(100, confirmed ? 'CONFIRMAÇÃO ILUSTRADA' : 'SOLICITAÇÃO DESCARTADA');
   actionArea.innerHTML='<button type="button" class="btn btn-coral btn-demo" id="restart-demo">Reiniciar cenário ↻</button><span>Etapa concluída nesta simulação.</span>';
   byId('restart-demo').addEventListener('click',()=>selectScenario(currentScenario));
 }
