@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joseaugustocpedro.github.io/foodflow-ai/sitemap.xml
